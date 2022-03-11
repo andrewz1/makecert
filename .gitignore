@@ -1,0 +1,7 @@
+.vscode/
+.idea/
+
+.gitlab-ci.yml
+Dockerfile
+
+makecert
