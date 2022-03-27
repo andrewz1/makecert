@@ -1,0 +1,14 @@
+[acme]
+staging = true # use staging for test, default false
+key = "acme.key" # use this key for ACME, generate new if load fail, save if param is set
+email = "user@mail.com" # optional email for registration
+type = "http-01" # ACME chellenge type: "http-01", "tls-alpn-01" or "dns-01"
+listen = ":80" # listen addr:port for chellenge. for "http-01" is "0.0.0.0:80", "tls-alpn-01" "0.0.0.0:443", "dns-01" "0.0.0.0:53"
+soa_ns = "ns.domain.com" # ns record for SOA for "dns-01", required
+
+[cert]
+type = "rsa2048" # private key type if new generated, "rsa2048" (default), "rsa4096", "rsa8192", "ec256", "ec384"
+key = "priv_key.pem" # private key file name, required
+cert = "cert_bundle.pem" # cert bundle file name, required
+domains = ["domain.com", "www.domain.com"] # domain in certificate, required
+must_staple = false # OCSP must staple in certificate, default false

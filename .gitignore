@@ -4,4 +4,9 @@
 .gitlab-ci.yml
 Dockerfile
 
+*.key
+*.pem
 makecert
+.env
+_build.sh
+_update.sh
