@@ -1,12 +1,12 @@
 module github.com/andrewz1/makecert
 
-go 1.18
+go 1.17
 
 require (
-	github.com/andrewz1/xnet v0.0.0-20220311150711-9e0fc1bc5037
+	github.com/andrewz1/xnet v0.0.0-20220412103726-9d74a34895df
 	github.com/andrewz1/xtoml v0.0.0-20220224151929-562b2bd58d04
 	github.com/go-acme/lego/v4 v4.6.0
-	github.com/miekg/dns v1.1.47
+	github.com/miekg/dns v1.1.48
 )
 
 require (
