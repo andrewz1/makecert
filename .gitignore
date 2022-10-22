@@ -1,12 +1,3 @@
-.vscode/
-.idea/
-
-.gitlab-ci.yml
-Dockerfile
-
+makecert
 *.key
 *.pem
-makecert
-.env
-_build.sh
-_update.sh
